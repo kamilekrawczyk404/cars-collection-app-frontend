@@ -1,16 +1,16 @@
 export enum FuelType {
-  Petrol = 1,
-  Diesel = 2,
-  Hybrid = 3,
-  LPG = 4,
+  Petrol = 0,
+  Diesel = 1,
+  Hybrid = 2,
+  LPG = 3,
 }
 
 export enum BodyType {
-  Hatchback = 1,
-  Sedan = 2,
-  Kombi = 3,
-  Suv = 4,
-  Roadster = 5,
+  Hatchback = 0,
+  Sedan = 1,
+  Kombi = 2,
+  Suv = 3,
+  Roadster = 4,
 }
 
 export interface Car {
@@ -26,4 +26,10 @@ export interface Car {
   carFuelConsumption: number;
 }
 
-export interface CreateCarDto extends Omit<Car, "id"> {}
+export interface ApiResponse<T> {
+  value: T;
+  isSuccess: boolean;
+  error: string | null;
+}
+
+export type CreateCarDto = Omit<Car, "id">;

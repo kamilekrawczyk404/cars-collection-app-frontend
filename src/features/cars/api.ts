@@ -1,14 +1,14 @@
-import { Car, CreateCarDto } from "./types";
+import { ApiResponse, Car, CreateCarDto } from "./types";
 import axios from "axios";
 
 const BASE_URL = "http://localhost:5105/api/cars";
 
-export const getCars = async (): Promise<Car[]> => {
+export const getCars = async (): Promise<ApiResponse<Car[]>> => {
   const { data } = await axios.get(BASE_URL);
   return data;
 };
 
-export const getCar = async (id: string): Promise<Car> => {
+export const getCar = async (id: string): Promise<ApiResponse<Car>> => {
   const { data } = await axios.get(`${BASE_URL}/${id}`);
   return data;
 };
