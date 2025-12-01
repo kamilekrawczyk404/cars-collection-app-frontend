@@ -1,0 +1,31 @@
+{
+  "version": 2,
+  "dgSpecHash": "UWIfM9btVEf3m5RvRtMH8oO9t8KqieeOPtVCi1OCvnjNdttqdXeeTmcTVrD85DBS2WK+viehrGs/DaMo44dUCw==",
+  "success": true,
+  "projectFilePath": "/Users/kamilek/RiderProjects/WebApplication1/Cars.Infrastructure/Cars.Infrastructure.csproj",
+  "expectedPackageFiles": [
+    "/Users/kamilek/.nuget/packages/microsoft.data.sqlite.core/8.0.21/microsoft.data.sqlite.core.8.0.21.nupkg.sha512",
+    "/Users/kamilek/.nuget/packages/microsoft.entityframeworkcore/8.0.21/microsoft.entityframeworkcore.8.0.21.nupkg.sha512",
+    "/Users/kamilek/.nuget/packages/microsoft.entityframeworkcore.abstractions/8.0.21/microsoft.entityframeworkcore.abstractions.8.0.21.nupkg.sha512",
+    "/Users/kamilek/.nuget/packages/microsoft.entityframeworkcore.analyzers/8.0.21/microsoft.entityframeworkcore.analyzers.8.0.21.nupkg.sha512",
+    "/Users/kamilek/.nuget/packages/microsoft.entityframeworkcore.relational/8.0.21/microsoft.entityframeworkcore.relational.8.0.21.nupkg.sha512",
+    "/Users/kamilek/.nuget/packages/microsoft.entityframeworkcore.sqlite/8.0.21/microsoft.entityframeworkcore.sqlite.8.0.21.nupkg.sha512",
+    "/Users/kamilek/.nuget/packages/microsoft.entityframeworkcore.sqlite.core/8.0.21/microsoft.entityframeworkcore.sqlite.core.8.0.21.nupkg.sha512",
+    "/Users/kamilek/.nuget/packages/microsoft.extensions.caching.abstractions/8.0.0/microsoft.extensions.caching.abstractions.8.0.0.nupkg.sha512",
+    "/Users/kamilek/.nuget/packages/microsoft.extensions.caching.memory/8.0.1/microsoft.extensions.caching.memory.8.0.1.nupkg.sha512",
+    "/Users/kamilek/.nuget/packages/microsoft.extensions.configuration.abstractions/8.0.0/microsoft.extensions.configuration.abstractions.8.0.0.nupkg.sha512",
+    "/Users/kamilek/.nuget/packages/microsoft.extensions.dependencyinjection/8.0.1/microsoft.extensions.dependencyinjection.8.0.1.nupkg.sha512",
+    "/Users/kamilek/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/8.0.2/microsoft.extensions.dependencyinjection.abstractions.8.0.2.nupkg.sha512",
+    "/Users/kamilek/.nuget/packages/microsoft.extensions.dependencymodel/8.0.2/microsoft.extensions.dependencymodel.8.0.2.nupkg.sha512",
+    "/Users/kamilek/.nuget/packages/microsoft.extensions.logging/8.0.1/microsoft.extensions.logging.8.0.1.nupkg.sha512",
+    "/Users/kamilek/.nuget/packages/microsoft.extensions.logging.abstractions/8.0.2/microsoft.extensions.logging.abstractions.8.0.2.nupkg.sha512",
+    "/Users/kamilek/.nuget/packages/microsoft.extensions.options/8.0.2/microsoft.extensions.options.8.0.2.nupkg.sha512",
+    "/Users/kamilek/.nuget/packages/microsoft.extensions.primitives/8.0.0/microsoft.extensions.primitives.8.0.0.nupkg.sha512",
+    "/Users/kamilek/.nuget/packages/sqlitepclraw.bundle_e_sqlite3/2.1.6/sqlitepclraw.bundle_e_sqlite3.2.1.6.nupkg.sha512",
+    "/Users/kamilek/.nuget/packages/sqlitepclraw.core/2.1.6/sqlitepclraw.core.2.1.6.nupkg.sha512",
+    "/Users/kamilek/.nuget/packages/sqlitepclraw.lib.e_sqlite3/2.1.6/sqlitepclraw.lib.e_sqlite3.2.1.6.nupkg.sha512",
+    "/Users/kamilek/.nuget/packages/sqlitepclraw.provider.e_sqlite3/2.1.6/sqlitepclraw.provider.e_sqlite3.2.1.6.nupkg.sha512",
+    "/Users/kamilek/.nuget/packages/system.memory/4.5.3/system.memory.4.5.3.nupkg.sha512"
+  ],
+  "logs": []
+}

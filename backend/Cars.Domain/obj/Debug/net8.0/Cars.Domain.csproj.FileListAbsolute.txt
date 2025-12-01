@@ -1,0 +1,12 @@
+/Users/kamilek/RiderProjects/WebApplication1/Cars.Domain/bin/Debug/net8.0/Cars.Domain.deps.json
+/Users/kamilek/RiderProjects/WebApplication1/Cars.Domain/bin/Debug/net8.0/Cars.Domain.dll
+/Users/kamilek/RiderProjects/WebApplication1/Cars.Domain/bin/Debug/net8.0/Cars.Domain.pdb
+/Users/kamilek/RiderProjects/WebApplication1/Cars.Domain/obj/Debug/net8.0/Cars.Domain.GeneratedMSBuildEditorConfig.editorconfig
+/Users/kamilek/RiderProjects/WebApplication1/Cars.Domain/obj/Debug/net8.0/Cars.Domain.AssemblyInfoInputs.cache
+/Users/kamilek/RiderProjects/WebApplication1/Cars.Domain/obj/Debug/net8.0/Cars.Domain.AssemblyInfo.cs
+/Users/kamilek/RiderProjects/WebApplication1/Cars.Domain/obj/Debug/net8.0/Cars.Domain.csproj.CoreCompileInputs.cache
+/Users/kamilek/RiderProjects/WebApplication1/Cars.Domain/obj/Debug/net8.0/Cars.Domain.dll
+/Users/kamilek/RiderProjects/WebApplication1/Cars.Domain/obj/Debug/net8.0/refint/Cars.Domain.dll
+/Users/kamilek/RiderProjects/WebApplication1/Cars.Domain/obj/Debug/net8.0/Cars.Domain.pdb
+/Users/kamilek/RiderProjects/WebApplication1/Cars.Domain/obj/Debug/net8.0/ref/Cars.Domain.dll
+/Users/kamilek/RiderProjects/WebApplication1/Cars.Domain/obj/Debug/net8.0/Cars.Domain.sourcelink.json

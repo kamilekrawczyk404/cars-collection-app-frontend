@@ -1,0 +1,197 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/kamilek/RiderProjects/WebApplication1/Cars.Application/Cars.Application.csproj": {}
+  },
+  "projects": {
+    "/Users/kamilek/RiderProjects/WebApplication1/Cars.Application/Cars.Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/kamilek/RiderProjects/WebApplication1/Cars.Application/Cars.Application.csproj",
+        "projectName": "Cars.Application",
+        "projectPath": "/Users/kamilek/RiderProjects/WebApplication1/Cars.Application/Cars.Application.csproj",
+        "packagesPath": "/Users/kamilek/.nuget/packages/",
+        "outputPath": "/Users/kamilek/RiderProjects/WebApplication1/Cars.Application/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/kamilek/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "/usr/local/share/dotnet/library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "/Users/kamilek/RiderProjects/WebApplication1/Cars.Domain/Cars.Domain.csproj": {
+                "projectPath": "/Users/kamilek/RiderProjects/WebApplication1/Cars.Domain/Cars.Domain.csproj"
+              },
+              "/Users/kamilek/RiderProjects/WebApplication1/Cars.Infrastructure/Cars.Infrastructure.csproj": {
+                "projectPath": "/Users/kamilek/RiderProjects/WebApplication1/Cars.Infrastructure/Cars.Infrastructure.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "FluentValidation.AspNetCore": {
+              "target": "Package",
+              "version": "[11.3.1, )"
+            },
+            "MediatR": {
+              "target": "Package",
+              "version": "[13.1.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.204/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/kamilek/RiderProjects/WebApplication1/Cars.Domain/Cars.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/kamilek/RiderProjects/WebApplication1/Cars.Domain/Cars.Domain.csproj",
+        "projectName": "Cars.Domain",
+        "projectPath": "/Users/kamilek/RiderProjects/WebApplication1/Cars.Domain/Cars.Domain.csproj",
+        "packagesPath": "/Users/kamilek/.nuget/packages/",
+        "outputPath": "/Users/kamilek/RiderProjects/WebApplication1/Cars.Domain/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/kamilek/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "/usr/local/share/dotnet/library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.204/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/kamilek/RiderProjects/WebApplication1/Cars.Infrastructure/Cars.Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/kamilek/RiderProjects/WebApplication1/Cars.Infrastructure/Cars.Infrastructure.csproj",
+        "projectName": "Cars.Infrastructure",
+        "projectPath": "/Users/kamilek/RiderProjects/WebApplication1/Cars.Infrastructure/Cars.Infrastructure.csproj",
+        "packagesPath": "/Users/kamilek/.nuget/packages/",
+        "outputPath": "/Users/kamilek/RiderProjects/WebApplication1/Cars.Infrastructure/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/kamilek/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "/usr/local/share/dotnet/library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "/Users/kamilek/RiderProjects/WebApplication1/Cars.Domain/Cars.Domain.csproj": {
+                "projectPath": "/Users/kamilek/RiderProjects/WebApplication1/Cars.Domain/Cars.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.Sqlite": {
+              "target": "Package",
+              "version": "[8.0.21, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.204/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

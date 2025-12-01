@@ -1,0 +1,242 @@
+{
+	"info": {
+		"_postman_id": "1209effe-aa6d-4dba-9263-644ef47a2362",
+		"name": "Cars API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "49443587",
+		"_collection_link": "https://kamilekkrawczyk404-8429777.postman.co/workspace/Kamil-Krawczyk's-Workspace~85465255-99da-4e5f-8920-bebebcc6d0d8/collection/49443587-1209effe-aa6d-4dba-9263-644ef47a2362?action=share&source=collection_link&creator=49443587"
+	},
+	"item": [
+		{
+			"name": "Create new car",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"var responseData = pm.response.json();",
+							"var newCarId = responseData.id;",
+							"pm.environment.set(\"carId\", newCarId);",
+							"console.log(\"New car id has been set - \", newCarId);"
+						],
+						"type": "text/javascript",
+						"packages": {},
+						"requests": {}
+					}
+				},
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							"",
+							"",
+							"const carManufacturersAndModels = [",
+							"    { brand: \"Toyota\", models: [\"Corolla\", \"Camry\", \"Yaris\"] },",
+							"    { brand: \"Ford\", models: [\"Fiesta\", \"Focus\", \"Mustang\"] },",
+							"    { brand: \"Honda\", models: [\"Civic\", \"Accord\", \"CR-V\"] },",
+							"    { brand: \"BMW\", models: [\"3 Series\", \"5 Series\", \"X3\"] },",
+							"    { brand: \"Mercedes-Benz\", models: [\"C-Class\", \"E-Class\", \"GLC\"] },",
+							"    { brand: \"Audi\", models: [\"A4\", \"A6\", \"Q5\"] },",
+							"    { brand: \"Volkswagen\", models: [\"Golf\", \"Passat\", \"T-Cross\"] },",
+							"    { brand: \"Chevrolet\", models: [\"Camaro\", \"Malibu\", \"Cruze\"] },",
+							"    { brand: \"Nissan\", models: [\"Altima\", \"Leaf\", \"Rogue\"] },",
+							"    { brand: \"Hyundai\", models: [\"Elantra\", \"Tucson\", \"Venue\"] },",
+							"]",
+							"",
+							"const randomBrand = carManufacturersAndModels[Math.floor(Math.random() * carManufacturersAndModels.length)].brand;",
+							"",
+							"const randomModel = carManufacturersAndModels.find(manufacturer => manufacturer.brand === randomBrand).models[Math.floor(Math.random() * carManufacturersAndModels.find(manufacturer => manufacturer.brand === randomBrand).models.length)];",
+							"",
+							"const fuelTypes = [0, 1, 2, 3];",
+							"const randomFuel = fuelTypes[Math.floor(Math.random() * fuelTypes.length)];",
+							"",
+							"const bodyTypes = [0,1,2,3,4];",
+							"const randomBody = bodyTypes[Math.floor(Math.random() * bodyTypes.length)];",
+							"",
+							"const randomDate = new Date().toISOString().split('T')[0];",
+							"",
+							"function getRandomInt(min, max) {",
+							"    min = Math.ceil(min);",
+							"    max = Math.floor(max);",
+							"    return Math.floor(Math.random() * (max - min + 1)) + min;",
+							"}",
+							"",
+							"function getRandomFloat(min, max, decimals) {",
+							"    const str = (Math.random() * (max - min) + min).toFixed(decimals);",
+							"    return parseFloat(str);",
+							"}",
+							"",
+							"",
+							"pm.environment.set(\"rand_brand\", randomBrand);",
+							"pm.environment.set(\"rand_model\", randomModel);",
+							"pm.environment.set(\"rand_doors\", getRandomInt(3,5));",
+							"pm.environment.set(\"rand_luggage\", getRandomInt(150, 650));",
+							"pm.environment.set(\"rand_engine\", getRandomInt(1000, 6000));",
+							"pm.environment.set(\"rand_fuel\", randomFuel);",
+							"pm.environment.set(\"rand_body\", randomBody);",
+							"pm.environment.set(\"rand_date\", randomDate);",
+							"pm.environment.set(\"rand_consumption\", getRandomFloat(3.5, 15.0, 1));"
+						],
+						"type": "text/javascript",
+						"packages": {},
+						"requests": {}
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"brand\": \"{{rand_brand}}\",\n  \"model\": \"{{rand_model}}\",\n  \"doorsNumber\": {{rand_doors}},\n  \"luggageCapacity\": {{rand_luggage}},\n  \"engineCapacity\": {{rand_engine}},\n  \"fuelType\": {{rand_fuel}},\n  \"bodyType\": {{rand_body}},\n  \"productionDate\": \"{{rand_date}}\",\n  \"carFuelConsumption\": {{rand_consumption}}\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{carsUrl}}/api/cars",
+					"host": [
+						"{{carsUrl}}"
+					],
+					"path": [
+						"api",
+						"cars"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get all cars",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{carsUrl}}/api/cars",
+					"host": [
+						"{{carsUrl}}"
+					],
+					"path": [
+						"api",
+						"cars"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get single car",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"brand\": \"Ford\",\n  \"model\": \"Mustang\",\n  \"doorsNumber\": 2,\n  \"luggageCapacity\": 380,\n  \"engineCapacity\": 5000,\n  \"fuelType\": 0, // 0 = Petrol\n  \"bodyType\": 4, // 4 = Roadster\n  \"productionDate\": \"2023-10-21T00:00:00\",\n  \"carFuelConsumption\": 12.5\n}"
+				},
+				"url": {
+					"raw": "{{carsUrl}}/api/cars/{{carId}}",
+					"host": [
+						"{{carsUrl}}"
+					],
+					"path": [
+						"api",
+						"cars",
+						"{{carId}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update car",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"id\": \"{{carId}}\",\n  \"brand\": \"Ford\",\n  \"model\": \"Mustang GT\",\n  \"doorsNumber\": 2,\n  \"luggageCapacity\": 380,\n  \"engineCapacity\": 5000,\n  \"fuelType\": 0, \n  \"bodyType\": 4, \n  \"productionDate\": \"2023-10-21T00:00:00\",\n  \"carFuelConsumption\": 13.0\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{carsUrl}}/api/cars/{{carId}}",
+					"host": [
+						"{{carsUrl}}"
+					],
+					"path": [
+						"api",
+						"cars",
+						"{{carId}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Remove car",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{carsUrl}}/api/cars/{{carId}}",
+					"host": [
+						"{{carsUrl}}"
+					],
+					"path": [
+						"api",
+						"cars",
+						"{{carId}}"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"requests": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"requests": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "carsUrl",
+			"value": ""
+		},
+		{
+			"key": "carId",
+			"value": "",
+			"type": "default"
+		}
+	]
+}
